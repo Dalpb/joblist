@@ -1,0 +1,13 @@
+header{
+    background-image: url("/public/images/bg-header-desktop.svg");
+    background-color: var(--background_header);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 10rem;
+}
+main{
+    margin: 4rem 9rem ;
+    display: flex;
+    flex-flow: column nowrap;
+    gap:2rem;
+}
