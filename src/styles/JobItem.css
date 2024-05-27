@@ -1,5 +1,78 @@
 .joBox{
     height:8.5rem ;
+    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    gap:1rem;
     background-color: white;
     border-radius: 0.5rem;
+    box-shadow: 0px 0 10px 5px var(--boxcolor_tools);
+}
+.joBox > div{
+    display: flex;
+    gap:1.3rem;
+}
+
+
+.company_styles,
+.joBox div:first-child p{
+    font-weight: var(--font_wbold);
+}
+
+.company_styles,
+.joBox div:first-child p:hover{
+
+    color: var(--fontcolor_company)
+}
+
+.joBox div:first-child  p{
+    font-size: large;
+    color: var(--fontcolor_position);
+    cursor: pointer;
+    margin: 1rem 0;
+}
+
+.joBox div:first-child ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    gap:0.5rem;
+}
+.joBox div:first-child li{
+    color: var(--fontcolor_information);
+}
+
+/* .joBox div:first-child li:nth-child(2)::before,
+.joBox div:first-child li:nth-child(3)::before{
+    content: ".   ";
+} */
+
+
+
+
+
+/*requriments styles*/
+.requirements{
+    align-items: center;
+    flex-wrap: wrap;
+}
+.requirements div{
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.3rem;
+    color: var(--fontcolor_company);
+    font-weight: var(--font_wbold);
+    background-color: var(--boxcolor_tools);
+    transition-property: color,background-color;
+    transition-duration: 0.12s;
+    transition-timing-function: ease-in;
+    cursor:pointer;
+}
+.requirements div:hover{
+    color:var(--boxcolor_tools);
+    transform: scale(1.05,1.05);
+    background-color: var(--fontcolor_company);
+}
+.requirements div:active{
+    transform: scale(0.97,0.97);
 }

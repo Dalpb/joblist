@@ -5,7 +5,8 @@
     --background_main: hsl(180,52%,96%);
     --fontcolor_information: hsl(180,8%,52%);
     --boxcolor_tools: hsl(180,31%,95%);
-    --fontcolor_company: hsl(180,14%,20%);
+    --fontcolor_position: hsl(180,14%,20%);
+    --fontcolor_company: hsl(180, 29%, 50%);
     --font_size:15px;
     --font_wbold:700;
     --font_wnormal:500;
@@ -24,5 +25,12 @@ body{
     font-family: "League Spartan", sans-serif;
     font-weight: var(--font_wnormal);
     font-style: normal;
+    display: flex;
+    justify-content: center;
     background-color: var(--background_main);
 }
+#root{
+    width: 100%;
+}
+
+

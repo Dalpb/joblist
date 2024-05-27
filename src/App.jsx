@@ -6,13 +6,14 @@ import './App.css'
 
 function App() {
   const [jobList, setJobList] = useState([])
-
+  const [requirements,setRequirement] = useState([]);
+  let data;
 
   useEffect(() =>{
     async function getJoblist(){
 
       try{
-        const data = await fetchJobList()
+         data = await fetchJobList()
         if(data !== null){
           setJobList(data);
         }
@@ -48,6 +49,11 @@ function App() {
             location={Item.location}
             languages={Item.languages}
             tools={Item.tools}
+            
+            requirements={requirements}
+            updateRequirements={setRequirement}
+            data={data}
+            updateJoblist={setJobList}
            />
         })        
       }

@@ -4,9 +4,10 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
     height: 10rem;
+
 }
 main{
-    margin: 4rem 9rem ;
+    margin: 4rem 15rem ;
     display: flex;
     flex-flow: column nowrap;
     gap:2rem;
